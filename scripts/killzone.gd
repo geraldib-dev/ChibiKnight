@@ -2,8 +2,10 @@ extends Area2D
 
 
 @onready var timer = $Timer
+@onready var knight = %Knight
 
 func _on_body_entered(body):
+	knight.die()
 	timer.start()
 
 
